@@ -3,27 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lunary Shop: каталог кроссовок</title>
+  <title>Lunary Shop: интернет-магазин кроссовок</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Lunary Shop</h1>
+    <div class="site-header">
+      <a class="site-logo" href="index.html">Lunary Shop</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#popular">Популярные товары</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Главная страница проекта</h2>
+    <section class="hero">
+      <h1>Lunary Shop</h1>
       <p>
-        Это стартовая страница учебного frontend-проекта.
-        В дальнейшем здесь будет разработан многостраничный сайт
-        интернет-магазина кроссовок.
+        Кроссовки в лунном стиле: лёгкие, удобные и спокойные по цвету.
+        Выбирай пару, которая подойдёт и для города, и для долгих прогулок
+        под луной.
       </p>
+      <a class="button" href="#popular">Перейти к товарам</a>
     </section>
+
+    <section class="section" id="advantages">
+      <h2>Преимущества магазина</h2>
+
+      <ul class="advantages-list">
+        <li>лёгкие и удобные модели на каждый день;</li>
+        <li>сдержанные цвета, которые сочетаются с любой одеждой;</li>
+        <li>понятный каталог и простое оформление заказа;</li>
+        <li>быстрая доставка и возврат в течение 14 дней.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="popular">
+      <h2>Популярные товары</h2>
+
+      <article class="product-card">
+        <h3>Lunar Runner</h3>
+        <p>Лёгкие беговые кроссовки в светло-серых тонах.</p>
+        <p class="product-card__price">Цена: 8 990 руб.</p>
+      </article>
+
+      <article class="product-card">
+        <h3>Moon Walk</h3>
+        <p>Городская модель на каждый день, мягкая подошва.</p>
+        <p class="product-card__price">Цена: 10 490 руб.</p>
+      </article>
+
+      <article class="product-card">
+        <h3>Silver Orbit</h3>
+        <p>Белые кроссовки с серебристыми вставками.</p>
+        <p class="product-card__price">Цена: 12 990 руб.</p>
+      </article>
+    </section>
+
+    <aside class="aside-info">
+      <h2>Информация для студентов</h2>
+      <p>
+        На следующих практических занятиях этот проект будет расширяться:
+        появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
+        БЭМ-структура и адаптивная версия сайта.
+      </p>
+    </aside>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Учебный проект</p>
+  <footer id="contacts">
+    <p>&copy; 2026 Lunary Shop. Учебный проект. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
   </footer>
 </body>
 </html>

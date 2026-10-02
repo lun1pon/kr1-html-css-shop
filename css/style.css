@@ -17,3 +17,10 @@ header {
 footer {
   background-color: #736464;
 }
+section {
+  margin-bottom: 24px;
+}
+
+section h2 {
+  margin-top: 0;
+}

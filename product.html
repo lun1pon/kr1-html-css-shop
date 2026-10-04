@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunar Runner: Lunary Shop</title>
+  <meta name="description" content="Беговые кроссовки Lunar Runner: описание, характеристики и размерная сетка.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html"><img src="images/moon.svg" alt="" width="28" height="28">Lunary Shop</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page" id="main">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol class="breadcrumbs__list"><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Каталог</a></li><li aria-current="page">Lunar Runner</li></ol></nav>
+    <article class="product-page">
+      <div class="product-page__media"><img src="images/sneaker.svg" alt="Кроссовки Lunar Runner" width="400" height="233"></div>
+      <div class="product-page__info">
+        <span class="product-page__badge">Хит</span>
+        <h1 class="product-page__title">Lunar Runner</h1>
+        <p class="product-page__description">Лёгкие беговые кроссовки в светло-серых тонах. Дышащий верх, мягкая амортизация и спокойный лунный цвет.</p>
+        <p class="product-page__price">8 990 руб.</p>
+        <div class="product-page__actions">
+          <a class="button" href="order.html">Заказать</a>
+          <a class="button button--ghost" href="#size-modal">Размерная сетка</a>
+        </div>
+      </div>
+    </article>
+    <section class="section">
+      <table class="specs">
+        <caption>Характеристики Lunar Runner</caption>
+        <thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Назначение</th><td>Бег и ежедневная носка</td></tr>
+          <tr><th scope="row">Верх</th><td>Текстильная сетка</td></tr>
+          <tr><th scope="row">Подошва</th><td>Резина с амортизацией</td></tr>
+          <tr><th scope="row">Вес</th><td>260 г</td></tr>
+          <tr><th scope="row">Цвет</th><td>Светло-серый</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <div class="modal" id="size-modal">
+    <a class="modal__overlay" href="#" aria-label="Закрыть окно"></a>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="size-title">
+      <h2 id="size-title">Размерная сетка</h2>
+      <table class="specs">
+        <thead><tr><th scope="col">EU</th><th scope="col">RU</th><th scope="col">Длина стопы, см</th></tr></thead>
+        <tbody>
+          <tr><td>40</td><td>39</td><td>25,5</td></tr>
+          <tr><td>41</td><td>40</td><td>26,0</td></tr>
+          <tr><td>42</td><td>41</td><td>26,5</td></tr>
+          <tr><td>43</td><td>42</td><td>27,5</td></tr>
+        </tbody>
+      </table>
+      <p><a class="button" href="#">Закрыть</a></p>
+    </div>
+  </div>
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 Lunary Shop. Учебный проект.</p>
+      <ul class="site-footer__links">
+        <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+        <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+        <li><a class="site-footer__link" href="index.html#contacts">Контакты</a></li>
+      </ul>
+    </div>
+  </footer>
+  <a class="to-top" href="#main">Наверх</a>
+</body>
+</html>

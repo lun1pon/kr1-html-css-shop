@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заявки: Lunary Shop</title>
+  <meta name="description" content="Форма заявки на кроссовки Lunary Shop.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html"><img src="images/moon.svg" alt="" width="28" height="28">Lunary Shop</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page" id="main">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol class="breadcrumbs__list"><li><a href="index.html">Главная</a></li><li aria-current="page">Заявка</li></ol></nav>
+    <h1 class="section__title">Оформление заявки</h1>
+    <p class="order-notice" id="sent" role="status">Заявка отправлена. Мы свяжемся с вами в ближайшее время.</p>
+    <form class="order-form" action="order.html#sent" method="get">
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-product">Товар</label>
+        <select class="order-form__input" id="order-product" name="product" required>
+          <option value="">Выберите товар</option>
+          <option>Lunar Runner</option>
+          <option>Moon Walk</option>
+          <option>Silver Orbit</option>
+          <option>Crater Low</option>
+          <option>Nebula High</option>
+          <option>Eclipse Slip</option>
+        </select>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-name">Имя</label>
+        <input class="order-form__input" id="order-name" name="name" type="text" minlength="2" autocomplete="given-name" placeholder="Введите ваше имя" required>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-email">E-mail</label>
+        <input class="order-form__input" id="order-email" name="email" type="email" autocomplete="email" placeholder="example@mail.ru" required>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-phone">Телефон</label>
+        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
+        <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-comment">Комментарий</label>
+        <textarea class="order-form__input" id="order-comment" name="comment" rows="4" placeholder="Размер, цвет, пожелания"></textarea>
+      </div>
+      <div class="order-form__field">
+        <label><input id="order-agreement" name="agreement" type="checkbox" required> Я согласен на обработку данных</label>
+      </div>
+      <div class="order-form__actions">
+        <button class="button" type="submit">Отправить заявку</button>
+        <a class="button button--ghost" href="catalog.html">К каталогу</a>
+      </div>
+    </form>
+  </main>
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 Lunary Shop. Учебный проект.</p>
+      <ul class="site-footer__links">
+        <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+        <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+        <li><a class="site-footer__link" href="index.html#contacts">Контакты</a></li>
+      </ul>
+    </div>
+  </footer>
+  <a class="to-top" href="#main">Наверх</a>
+</body>
+</html>
